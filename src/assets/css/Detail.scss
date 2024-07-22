@@ -1,0 +1,113 @@
+.go-back-btn {
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0 60px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 4px;
+    color: #212182;
+
+    .icon {
+        font-size: 20px;
+        font-variation-settings: "wght" 700;
+    }
+}
+
+.movie-detail-wrap {
+    display: flex;
+    gap: 32px;
+
+    .img-box {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+    .txt-box {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+
+        .title {
+            margin: 0 0 16px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            h2,
+            p {
+                margin: 0;
+            }
+            h2 {
+                font-size: 28px;
+                line-height: 1.4;
+            }
+            .rating {
+                display: flex;
+                align-items: center;
+                line-height: 1;
+                gap: 4px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #222;
+                .icon {
+                    font-variation-settings: "FILL" 1;
+                    font-size: 32px;
+                    line-height: 20px;
+                    color: #e6c10b;
+                }
+            }
+        }
+        .genres-list {
+            display: flex;
+            margin: 0 0 40px;
+            padding: 0;
+            justify-content: start;
+            list-style: none;
+            font-size: 14px;
+            color: #777;
+            gap: 4px 8px;
+            flex-wrap: wrap;
+        }
+        .like-btn {
+            position: relative;
+            display: flex;
+            margin-top: 72px;
+            width: 100%;
+            color: steelblue;
+            border: 1px solid steelblue;
+            border-radius: 4px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            background: #fff;
+            font-size: 16px;
+
+            .icon {
+                font-size: 20px;
+                font-variation-settings: "FILL" 0;
+            }
+            .value {
+                font-weight: bold;
+            }
+            .like-count {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            &.clicked {
+                font-weight: bold;
+                color: #fff;
+                background: steelblue;
+                .value {
+                }
+
+                .icon {
+                    font-variation-settings: "FILL" 1;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

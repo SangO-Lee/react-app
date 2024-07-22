@@ -6,4 +6,10 @@
     padding: 0 16px;
     width: 1200px;
     max-width: 100%;
+    &.narrow {
+        width: 1024px;
+    }
+}
+.img-responsive {
+    max-width: 100%;
 }

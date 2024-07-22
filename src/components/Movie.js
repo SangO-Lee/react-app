@@ -3,23 +3,27 @@ import { Link } from "react-router-dom";
 
 function Movie({ coverImg, title, summary, genres, id, year }) {
     return (
-        <div class="movie-item">
-            <Link to={`/movie/${id}`}>
-                <div class="img-box">
-                    <img src={coverImg} class="img-responsive" />
+        <div className="movie-item">
+            <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
+                <div className="img-box">
+                    <img
+                        src={coverImg}
+                        className="img-responsive"
+                        alt={title}
+                    />
                 </div>
-                <div class="txt-box">
-                    <h2 class="title">
+                <div className="txt-box">
+                    <h2 className="title">
                         {title} ({year})
                     </h2>
-                    <ul class="genres-list">
+                    <ul className="genres-list">
                         {genres.map((g) => [<li key={g}>{g}</li>])}
                     </ul>
-                    <p class="summary">
+                    <p className="summary">
                         {summary.length > 235
                             ? `${summary.slice(0, 235)}...`
                             : summary}
-                        <span class="more">view more</span>
+                        <span className="more">view more</span>
                     </p>
                 </div>
             </Link>

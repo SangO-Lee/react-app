@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./Button.module.scss";
+import styles from "../assets/css/Button.module.scss";
 
 function Button({ text, onClick }) {
     return (

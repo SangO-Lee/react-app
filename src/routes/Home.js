@@ -19,13 +19,13 @@ function Home() {
     }, []);
     console.log(movies);
     return (
-        <div class="container">
+        <div className="container">
             {loading ? (
-                <div class="loading">
+                <div className="loading">
                     <h1>Loading...</h1>
                 </div>
             ) : (
-                <div class="movie-list">
+                <div className="movie-list">
                     {movies.map((movie) => (
                         <Movie
                             key={movie.id}

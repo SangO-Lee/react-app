@@ -19,24 +19,7 @@
         background: #fff;
         perspective: 1000px;
         transition: all 0.3s ease;
-        // &::after {
-        //     content: "view more";
-        //     position: absolute;
-        //     left: 0;
-        //     bottom: 0;
-        //     display: flex;
-        //     width: 100%;
-        //     text-align: center;
-        //     justify-content: center;
-        //     align-items: center;
-        //     font-size: 12px;
-        //     font-weight: bold;
-        //     color: #fff;
-        //     border-radius: 4px 0 0 0;
-        //     line-height: 1;
-        //     color: steelblue;
-        //     text-transform: uppercase;
-        // }
+
         &:hover {
             // border-color: steelblue;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
